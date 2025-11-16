@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{{url_for('static',filename='base_style.css')}}" rel="stylesheet">
+    {% block child_styles %}{% endblock %}
+
+</head>
+<body>
+    <header>
+        <nav>
+            <button></button>
+            <div>SIGN UP</div>
+            <div>LOG IN </div>
+            <div>LOG OUT</div>
+        </nav>
+    </header>
+    <main>
+        <h1>{% block heading %}{% endblock %}</h1>
+        <div>{% block content %}{% endblock %}</div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+nav{
+    display:flex;
+    flex-direction:row;
+    background-color:rgba(0,0,0,0.8);
+    height:10vh;
+    color:white;
+    gap:10vw;
+    align-items:center;
+}
+nav div:hover{
+    text-decoration:underline;
+    cursor:pointer;
+}
+h1{
+    text-align:center;
+}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}LOG IN {% endblock %}
+
+{% block child_styles %}<link href="{{url_for('static',filename='signup_style.css')}}" rel="stylesheet">{% endblock %}
+
+{% block heading %}LOG IN{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <div>
+            <label for="name">USERNAME:</label>
+            <input id="name" type="text" name="name" required>
+        </div>
+        <div>
+            <label for="email">EMAIL ADDRESS:</label>
+            <input id="email" type="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">PASSWORD:</label>
+            <input id="password" type="password" name="password" required>
+        </div>
+
+        <button type="submit" id="signup-btn">LOGIN</button>
+
+    </form>
+{% endblock %}
